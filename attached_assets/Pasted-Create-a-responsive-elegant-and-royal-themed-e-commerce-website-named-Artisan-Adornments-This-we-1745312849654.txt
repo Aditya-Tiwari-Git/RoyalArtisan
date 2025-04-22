@@ -1,0 +1,66 @@
+Create a responsive, elegant, and royal-themed e-commerce website named Artisan Adornments.
+
+This website should load product data dynamically from the following Google Sheet (public):
+📄 https://docs.google.com/spreadsheets/d/1ZQFhHfbv7t0feGMlihnnHT8qiIkcHJEk3RIq3i3yPJ0/edit?usp=sharing
+
+✅ Features Required:
+Display products in grid cards using the sheet data:
+
+Show: Name, Image, Description, Price, Offer (if available), and "Out of Stock" if IsAvailable = No.
+
+Add a Buy on WhatsApp button for each product:
+
+On click, it should redirect to WhatsApp (https://wa.me/918619999198) with the message from the WhatsAppMessage column.
+
+Add category filters at the top (like Saree, Jewellery, God Veshbusha, Spiritual Cloth) based on the Category column.
+
+Add a search bar to search by name or tags.
+
+Highlight products with Featured = Yes in a Featured Items section at the top.
+
+Ensure products are sorted by DisplayOrder column (if present).
+
+Use a floating WhatsApp icon for instant support on all pages.
+
+🎨 Design Instructions:
+Overall vibe: Premium, Spiritual, Classical, Royal
+
+Fonts: Use serif or devotional fonts for headings, and clean sans-serif for text.
+
+Color Palette:
+
+Maroon #800000
+
+Soft Gold #D4AF37
+
+Off-white #F9F5F0
+
+Royal Blue #002366
+
+Include graceful animations on hover, soft shadows, and large rounded corners.
+
+Responsive across desktop, tablet, and mobile.
+
+📌 Technical Notes:
+The Google Sheet should be parsed using Tabletop.js or Google Visualization API to get real-time data.
+
+Use pure HTML/CSS/JS (or React if supported).
+
+The ImageURL column provides direct image links.
+
+Offer text should appear as a badge (e.g., “10% OFF”).
+
+If IsAvailable = No, disable the Buy button and overlay “Out of Stock”.
+
+Optional:
+
+Add an Instagram feed section at the bottom (placeholder for now).
+
+Add a contact section with email form and WhatsApp chat.
+
+You can assume the column structure:
+
+pgsql
+Copy
+Edit
+ID, Name, Category, Price, Description, ImageURL, IsAvailable, Featured, WhatsAppMessage, Tags, AddedOn, DisplayOrder, Offer
